@@ -1,0 +1,201 @@
+/* General Layout */
+.dashboard-container {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f9fc;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.dashboard-header {
+  background-color: #34495e;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.dashboard-nav {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.dashboard-nav li {
+  display: inline;
+  margin-right: 30px;
+}
+
+.dashboard-nav a {
+  color: #ecf0f1;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.dashboard-nav a:hover {
+  color: #3498db;
+  text-decoration: underline;
+}
+
+/* Welcome Section */
+.welcome-section {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.welcome-section p {
+  font-size: 18px;
+}
+
+.welcome-section strong {
+  font-size: 22px;
+  color: #2ecc71;
+}
+
+/* Alerts Section */
+.alerts-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.alerts-section h3 {
+  font-size: 20px;
+  color: #e74c3c;
+}
+
+.alerts-section a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.alerts-section a:hover {
+  text-decoration: underline;
+}
+
+/* Product Management Section */
+.product-management {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-management h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.product-management input {
+  padding: 12px;
+  margin: 8px 0;
+  width: 100%;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.product-management input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.product-management button {
+  padding: 12px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.product-management button:hover {
+  background-color: #2980b9;
+}
+
+.product-management ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.product-management li {
+  background-color: #ecf0f1;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.product-management li:hover {
+  background-color: #dfe6e9;
+}
+
+.product-management li span {
+  font-size: 18px;
+}
+
+.product-management li button {
+  background-color: #e74c3c;
+  margin-left: 10px;
+  padding: 8px 15px;
+}
+
+.product-management li button:hover {
+  background-color: #c0392b;
+}
+
+.product-management li button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+/* Hover effects on all sections */
+.welcome-section:hover,
+.alerts-section:hover,
+.product-management:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 15px;
+  }
+
+  .dashboard-nav li {
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .product-management input {
+    width: 100%;
+  }
+
+  .product-management button {
+    width: 100%;
+  }
+}
